@@ -100,7 +100,7 @@ By default, position = 0, end = length of str, and end-token and end-value = nil
     (multiple-value-bind (patterns actions)
         (extract-patterns-and-actions rules)
       `(progn
-         (defparameter ,matchervar (macroexpand-regex-expr ',(combine-patterns patterns)))
+         (defparameter ,matchervar (compile-expr ',(combine-patterns patterns)))
          (defun ,name (,strvar &key (start 0)
                                     (end (length ,strvar))
                                     (end-token nil)
