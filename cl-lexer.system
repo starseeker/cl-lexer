@@ -2,11 +2,11 @@
 
 (in-package "CL-USER")
 
-(load-logical-pathname-translations "LEXER")
+(load-logical-pathname-translations "CL-LEXER")
 
-(mk:defsystem "LEXER"
+(mk:defsystem "CL-LEXER"
 	      :source-extension "lisp"
-	      :source-pathname (translate-logical-pathname "LEXER:SRC;")
+	      :source-pathname (translate-logical-pathname "CL-LEXER:SRC;")
 	      :components (
                        (:file "packages")
                        (:file "lexer")))
@@ -14,6 +14,6 @@
 
 
 (defun lc-lexer ()
-  (mk:compile-system "LEXER"))
+  (mk:compile-system "CL-LEXER"))
 (defun ld-lexer ()
-  (mk:load-system "LEXER"))
+  (mk:load-system "CL-LEXER"))

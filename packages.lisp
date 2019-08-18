@@ -1,6 +1,6 @@
 ;;; -*- Mode: Lisp; Syntax: Common-Lisp; Base: 10 -*-
 
-(defpackage "LEXER"
+(defpackage "CL-LEXER"
 #+:Genera  (:use COMMON-LISP CLOS REGEX)
 #-:Genera  (:use COMMON-LISP REGEX)
   (:export "TOKENIZE" "DEFLEXER"
@@ -9,5 +9,5 @@
    ))
 
 (defun delete-lexer ()
-  (delete-package :LEXER))
+  (delete-package :CL-LEXER))
 

@@ -1,8 +1,8 @@
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (require :lexer))
+  (require :cl-lexer))
 
 (defpackage #:test-lexer
-  (:use #:common-lisp #:lexer)
+  (:use #:common-lisp #:cl-lexer)
   (:export #:test))
 
 (in-package #:test-lexer)

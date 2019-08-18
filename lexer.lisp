@@ -1,6 +1,6 @@
-;;; -*- Mode: LISP; Syntax: COMMON-LISP; Package: LEXER; Base: 10 -*-
+;;; -*- Mode: LISP; Syntax: COMMON-LISP; Package: CL-LEXER; Base: 10 -*-
 
-(in-package :LEXER)
+(in-package :CL-LEXER)
 
 
 ;;;

@@ -2,7 +2,7 @@
 
 (in-package "CL-USER")
 
-(asdf:defsystem lexer
+(asdf:defsystem cl-lexer
     :description "cl-lexer: a lexical analyzer generator"
     :version "1.4"
     :author "Kenneth Michael Parker"
